@@ -1,7 +1,7 @@
 @props(['listitem'])
 
-<li class="flex max-w-lg">
-    <form class="flex max-w-md grow" method="POST" action="/shoppinglistitem/{{$listitem->id}}">
+<li class="flex max-w-2xl">
+    <form class="flex max-w-2xl grow" method="POST" action="/shoppinglistitem/{{$listitem->id}}">
         <input type=text name="description" 
         class="grow m-2 rounded-md border-2 border-slate-500 bg-blue-100 p-1" value="{{$listitem->description}}">
         @csrf

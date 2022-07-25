@@ -32,5 +32,11 @@ class ShoppingListSeeder extends Seeder
             'access_code' => 'cccccc',
             'user_id' => 1
         ]);
+        \App\Models\ShoppingList::factory()->create([
+            'title' => 'Tech Interview',
+            'description' => 'The 2:00 meeting with Trevett\'s Tech team ',
+            'access_code' => 'dddddd',
+            'user_id' => 1
+        ]);
     }
 }

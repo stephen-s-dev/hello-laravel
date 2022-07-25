@@ -9,13 +9,13 @@
     <h3 class="text-1xl text-center text-neutral-500 font-bold">
         {{$shoppinglist->description}}
     </h3>
-    <ul>
+    <ul class="">
     @foreach ($shoppinglist->shoppinglistitems as $item)
         <x:shopping-list-item :listitem="$item">
         </x:shopping-list-item>
     @endforeach
     </ul>
-    <form class="flex max-w-lg" method="POST" action="/shoppinglistitem">
+    <form class="flex max-w-2xl" method="POST" action="/shoppinglistitem">
         <input type="hidden" name="shopping_list_id" value="{{$shoppinglist->id}}">
         <input class="grow  m-2 rounded-md border-2 border-slate-500 bg-blue-100 p-1" type="text" name="description" placeholder="Add New List Item" >
         @csrf
