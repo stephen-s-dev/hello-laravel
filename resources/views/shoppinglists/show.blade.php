@@ -26,7 +26,7 @@
         <form class="m-2 rounded-md border-2 bg-red-700 text-white border-stone-700 p-1 text-center" method="POST" action="/shoppinglist/{{$shoppinglist->id}}">
             @csrf
             @method("DELETE")
-            <button type="submit" >Delete list</button>
+            <button type="submit" >Delete lista</button>
         </form>
         
     </footer>
